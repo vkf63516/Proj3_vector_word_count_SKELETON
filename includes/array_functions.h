@@ -50,7 +50,7 @@ namespace KP{
 	 * Sort myEntryArray based on so enum value.
 	 * Please provide a solution that sorts according to the enum
 	 * The presence of the enum implies a switch statement based on its value
-	 * You are provided with a myentry compare function in the cpp file
+	 * See the course lectures and demo project for how to sort a vector of structs
 	 */
 	void sort(std::vector<constants::entry>  &entries, constants::sortOrder so);
 }
