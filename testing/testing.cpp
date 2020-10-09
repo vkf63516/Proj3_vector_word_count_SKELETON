@@ -39,7 +39,7 @@ bool EXPECT_EQ(T expectedVal, U actualVal,string testnumb = "", int pts=ONE_POIN
 		cout<<"SUCCESS "+testnumb<<" points:"<<total_points;
 	}
 	else{
-		cout<<"FAIL "<<expectedVal<<actualVal<<testnumb;
+		cout<<"FAIL expected="<<expectedVal<<", actual="<<actualVal<<", Test="<<testnumb;
 	}
 	cout<<endl;
 	return bout;
