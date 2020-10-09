@@ -43,11 +43,17 @@ namespace KP{
 	feed each token to processToken for recording*/
 	void processLine(std::vector<constants::entry>  &entries,std::string &myString);
 
-	/*Keep track of how many times each token seen*/
+	/*NOTE: first call strip_unwanted_chars from utilities to get rid of rubbish chars in the token
+	 * if the token is an empty string after this then return since we are not tracking empty strings
+	 *
+	 * Keep track of how many times each token seen, in other words look thru the entries vector to
+	 * see if there is a entry struct that has entry.word==token,
+	 * if so increment entry.number_occurences, otherwise create a new entry struct for the token,
+	 * set entry.number_occurences=1 and add it to the entries vector*/
 	void processToken(std::vector<constants::entry>  &entries,std::string &token);
 
 	/*
-	 * Sort myEntryArray based on so enum value.
+	 * Sort entries based on so enum value.
 	 * Please provide a solution that sorts according to the enum
 	 * The presence of the enum implies a switch statement based on its value
 	 * See the course lectures and demo project for how to sort a vector of structs
