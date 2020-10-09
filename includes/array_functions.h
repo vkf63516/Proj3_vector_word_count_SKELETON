@@ -47,7 +47,7 @@ namespace KP{
 	void processToken(std::vector<constants::entry>  &entries,std::string &token);
 
 	/*
-	 * Sort myEntryArray based on so enum value.
+	 * Sort entries based on so enum value.
 	 * Please provide a solution that sorts according to the enum
 	 * The presence of the enum implies a switch statement based on its value
 	 * See the course lectures and demo project for how to sort a vector of structs
